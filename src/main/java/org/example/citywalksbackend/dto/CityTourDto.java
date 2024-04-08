@@ -4,7 +4,7 @@ import org.example.citywalksbackend.entity.CityTour;
 
 public class CityTourDto {
     private int id;
-    private int capacity;
+  //  private int capacity;
     private String guide;
     private Double price;
     private String nameOfTour;
@@ -16,14 +16,6 @@ public class CityTourDto {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public int getCapacity() {
-        return capacity;
-    }
-
-    public void setCapacity(int capacity) {
-        this.capacity = capacity;
     }
 
     public String getGuide() {
@@ -61,7 +53,7 @@ public class CityTourDto {
     public CityTourDto(CityTour c) {
         this.id = c.getId();
         this.nameOfTour = c.getNameOfTour();
-        this.capacity = c.getCapacity();
+        //this.capacity = c.getCapacity();
         this.price = c.getPrice();
         this.distanceOfTour = c.getDistanceOfTour();
         this.guide = c.getGuide();

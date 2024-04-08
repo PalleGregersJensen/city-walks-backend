@@ -10,7 +10,7 @@ public class CityTour {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private int capacity;
+    //private int capacity;
     private String guide;
     private Double price;
     private String nameOfTour;
@@ -22,14 +22,6 @@ public class CityTour {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public int getCapacity() {
-        return capacity;
-    }
-
-    public void setCapacity(int capacity) {
-        this.capacity = capacity;
     }
 
     public String getGuide() {
